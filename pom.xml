@@ -61,21 +61,7 @@
   </build>
 	
 	
-	  <publishers>
-    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.10">
-      <adapters>
-        <hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
-          <userName>deployer</userName>
-          <passwordScrambled>YWRtaW4=</passwordScrambled>
-          <url>http://localhost:8060</url>
-        </hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
-      </adapters>
-      <contextPath>spring-petclinic</contextPath>
-      <war>target/*.war</war>
-      <onFailure>false</onFailure>
-    </hudson.plugins.deploy.DeployPublisher>
-  </publishers>
-  <buildWrappers/>
+	
 	
 	
 	
