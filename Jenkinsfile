@@ -13,7 +13,7 @@ git 'https://github.com/AshutoshKumar99/FastMaven.git'
 stage('Build Code')
 {
 
-bat 'mvn clean install'
+bat 'mvn clean install -Dmaven.test.failure.ignore=true'
 }
 
 stage ('JUnit report')
