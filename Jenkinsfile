@@ -14,11 +14,12 @@ stage('Build Code')
 {
 
 bat 'mvn clean install'
-
-
 }
 
-
+stage ('JUnit report')
+  {
+    junit 'target/surefire-reports/*.xml' 
+  }
 
 
 
