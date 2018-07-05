@@ -18,6 +18,7 @@ bat 'mvn clean install -Dmaven.test.failure.ignore=true'
 
 stage ('JUnit report')
   {
+    archive "target/**/*"
     junit 'target/surefire-reports/*.xml' 
   }
 
