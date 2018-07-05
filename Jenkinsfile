@@ -25,7 +25,7 @@ stage ('JUnit report')
 
   stage('Code coverage')
   {
-   archive "target/**/*"
+   archiveArtifacts "target/**/*"
 
   // publish html
   // snippet generator doesn't include "target:"
